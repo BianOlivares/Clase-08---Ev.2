@@ -155,7 +155,7 @@ td:nth-child(3) {
 
         <script>
             const t = document.querySelector("#este");
-            const URL = "https://api.myjson.online/v1/records/b3b84e1c-7943-4122-884d-21ac743f6544";
+            const URL = "https://api.myjson.online/v1/records/996b9789-5628-464c-967c-1d8fac016b54";
 
             fetch(URL)
                 .then((respuesta) => {
@@ -168,7 +168,7 @@ td:nth-child(3) {
                     var trabajo = datos.data;
                     console.log(trabajo);
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.n°}</td><td>${x.name}</td><td>${x.title}</td><td>${x.grade}</td><td>${x.category}</td><td>${x.tutor}</td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.id}</td><td>${x.name}</td><td>${x.title}</td><td>${x.grade}</td><td>${x.category}</td><td>${x.tutor}</td></tr>`;
                     });
                 })
                 .catch((error) => {
