@@ -168,7 +168,7 @@ td:nth-child(3) {
                     var trabajo = datos.data;
                     console.log(trabajo);
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.N°}</td><td>${x.Titulad@}</td><td>${x.Proyecto}</td><td>${x.Nota}</td><td>${x.Categoría}</td><td>${x.Prof. Guía}</td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.N°}</td><td>${x.Name}</td><td>${x.Title}</td><td>${x.Grade}</td><td>${x.Category}</td><td>${x.Tutor}</td></tr>`;
                     });
                 })
                 .catch((error) => {
